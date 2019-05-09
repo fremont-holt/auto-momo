@@ -1,0 +1,22 @@
+{
+  "name": "momov2",
+  "version": "1.0.0",
+  "description": "Electron version of Momo app",
+  "productName": "AutoMomo",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-win",
+    "build-win": "electron-packager . --out=\"build\" --overwrite"
+  },
+  "author": "Tim Holt",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.1",
+    "wallpaper": "^4.4.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^13.1.1"
+  }
+}
